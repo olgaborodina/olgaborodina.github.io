@@ -106,7 +106,7 @@ input, select, textarea {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
-		line-height: 1.75em;
+		line-height: 1.5em;
 		color: #888;
 	}
 
@@ -131,11 +131,11 @@ input, select, textarea {
 	}
 
 		h2.alt {
-			color: #888;
+			color: #777;
 		}
 
 			h2.alt strong {
-				color: #666;
+				color: #333;
 			}
 
 	h3 {
@@ -161,6 +161,14 @@ input, select, textarea {
 
 	em, i {
 		font-style: italic;
+	}
+
+	h4 {
+		font-size: 1.0em;
+		text-align: left;
+		line-height: 1.75em;
+		color: #777;
+
 	}
 
 	a {
