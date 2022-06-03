@@ -125,17 +125,25 @@ input, select, textarea {
 			color: #333;
 		}
 
+	h1.shadow {
+		color: white;
+		text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 15px #000, 0 0 15px #000;
+	}
+
 	h2 {
 		font-size: 2em;
 		letter-spacing: -1px;
 	}
 
 		h2.alt {
-			color: #777;
+			color: #888;
+			font-weight: bold;
 		}
 
 			h2.alt strong {
 				color: #333;
+				font-weight: bold;
+				text-shadow: 0 0 25px #000, 0 0 25px #000, 0 0 25px #000, 0 0 25px #000;
 			}
 
 	h3 {
@@ -217,6 +225,7 @@ input, select, textarea {
 	br.clear {
 		clear: both;
 	}
+
 
 /* Container */
 
@@ -1773,15 +1782,26 @@ input, select, textarea {
 				height: 48px;
 			}
 
-		.image.avatar260 {
-			width: 260px;
-			height: 260px;
+		.image.avatar160 {
+			width: 160px;
+			height: 160px;
 			background: #f00;
 		}
 
-			.image.avatar260 img {
-				width: 260px;
-				height: 260px;
+			.image.avatar160 img {
+				width: 160px;
+				height: 160px;
+
+			}
+
+		.image.avatarflex {
+			width: 90%
+			background: #f00;
+		}
+
+			.image.avatarflex img {
+				width: 90%
+
 			}
 
 		.image.fit {
@@ -1802,12 +1822,15 @@ input, select, textarea {
 
 		.image.centered {
 			display: block;
-			margin: 0 0 2em 0;
+			margin-left: auto;
+  			margin-right: auto;
+/*			margin: 0 0 2em 0;*/
 		}
 
 			.image.centered img {
-				margin: 0 auto;
-				width: auto;
+				margin-left: auto;
+  				margin-right: auto;
+				width: 70%;
 			}
 
 /* List */
@@ -2074,7 +2097,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 375px;
+		width: 400px;
 	}
 
 		#header .top {
@@ -2139,7 +2162,7 @@ input, select, textarea {
 		}
 
 		#logo .image {
-			position: relative;
+			position: centered;
 			left: 0;
 			top: 0;
 			margin: 0.5em 2.5em 0 0;
@@ -2383,6 +2406,7 @@ input, select, textarea {
 						margin-left: -1.25em;
 						line-height: 2.25em;
 					}
+
 
 		/* Footer */
 
