@@ -175,10 +175,13 @@ input, select, textarea {
 		font-size: 1.0em;
 		text-align: left;
 		line-height: 1.75em;
-		color: #777;
+		color: #333;
 
 	}
-
+		h4 strong {
+				color: #333;
+				font-weight: 400;
+				}
 	a {
 		text-decoration: none;
 		color: inherit;
@@ -2165,7 +2168,7 @@ input, select, textarea {
 			position: centered;
 			left: 0;
 			top: 0;
-			margin: 0.5em 2.5em 0 0;
+/*			margin: 0.5em 2.5em 0 0;*/
 		}
 
 	#nav ul {
