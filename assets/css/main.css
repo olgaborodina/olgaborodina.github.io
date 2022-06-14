@@ -127,7 +127,10 @@ input, select, textarea {
 
 	h1.shadow {
 		color: white;
-		text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 15px #000, 0 0 15px #000;
+		font-weight: 444;
+		letter-spacing: 1px;
+		font-size: 1.25em;
+		text-shadow: 0 0 20px #000, 0 0 20px #000, 0 0 20px #000, 0 0 20px #000, 0 0 15px #000;
 	}
 
 	h2 {
@@ -162,8 +165,9 @@ input, select, textarea {
 		margin: 2em 0 0 0;
 	}
 
-	strong, b {
-		font-weight: 300;
+	strong, b {             /* headers */
+		font-weight: bold;
+		letter-spacing: 2px;
 		color: #666;
 	}
 
