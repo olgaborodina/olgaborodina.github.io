@@ -37,9 +37,7 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html" id="top-link"><span class="icon solid fa-home">back</span></a></li>
-								<li><a href="#abstract" id="abstract-link"><span class="icon solid fa-th">abstract</span></a></li>
-								<li><a href="#intro" id="intro-link"><span class="icon solid fa-th">intro to the TWM</span></a></li>
-								<li><a href="#apply" id="apply-link"><span class="icon solid fa-th">applying the TWM</span></a></li>
+								<li><a href="#slides" id="slides-link"><span class="icon solid fa-th">slides</span></a></li>
 								<li><a href="#interactive" id="interactive-link"><span class="icon solid fa-th">interactive plots</span></a></li>
 <!-- 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">about me</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">contact</span></a></li>
@@ -71,64 +69,16 @@
 				</div>
 				</h1>
 
-				<div class="container" id="abstract" >
+				<div class="container" id="slides" >
+
 				<header>
-					<h2><b><center>ABSTRACT</center></b></h2>
+					<h2><b><center>SLIDES</center></b></h2>
 				</header>
 
-				<p><h4 style = "text-indent:1cm;"> 
-			 	Pattern speeds are a fundamental dynamical parameter within a galaxy, setting resonance locations which are important for gathering gas and triggering episodes of star formation. 
-				</h4>
-				<h4 style = "text-indent:1cm;"> 
-				<a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...282L...5T">The Tremaine-Weinberg (TW) method</a> was developed analytically and has been applied to measure the pattern speeds of many galaxies over the past 30 years. This method is based on three assumptions. First, that the galaxy disk is flat, second, the disk contains a single, well-defined pattern speed, and third, the tracer obeys the continuity equation. However, it has not been tested properly whether the three conditions for this method are valid in reality.  When applied to observations, the method may return invalid results, which are difficult to diagnose due to a lack of ground truth for comparison.
-				</h4>
-				<h4 style = "text-indent:1cm;"> 
-				For example, <a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161..185W">Williams et. al. (2021)</a>  showed that when we apply the TW method to different tracers we measure different “pattern speeds”.
-				</h4>
-				<h4 style = "text-indent:1cm;"> 
-				I have explored the pitfalls of the TW method, by applying it to simulated galaxies, where we know the ground truth value of the pattern speed. Although some works applying the TW method to simulated galaxies exist, there are still questions if imperfections of measurements and symmetry of the galaxy matter. Observationally, it is also unclear if we can trust measurements that use CO or HI as tracers.
-				</h4>
-				<h4 style = "text-indent:1cm;"> 
-				First, we apply it to hydrodynamical 2D simulations, and then we perform some simple tests to see if the TW method has a physically reasonable output. We add different kinds of uncertainties to the data to mock o bservational errors and study the maximum allowable values of them. Second, we test the method on 3D simulations with chemical networks. We show that not all gas tracers can provide us with the correct result if we use the TW method. These results have implications for many "pattern speeds" reported in the literature, as well as best practices for measuring pattern speeds going forwards.
-				</h4></p>
-
-			    </div>
-
-
-				<div class="container" id="intro" >
-				<header>
-					<h2><b><center>INTRO TO THE TWM</center></b></h2>
-				</header>
-
-				<p><h4 class="math display">
-			 	The Tremaine-Weinberg method (TWM) is the most common method to measure pattern speeds in galaxies and has been applied to many galaxies over the past 30 years. This method is based on three assumptions. First, that the galaxy disk is flat, second, the disk contains a single, well-defined pattern speed, and third, the tracer obeys the continuity equation. 
-				</h4></p>
-
-				<p><h4 class="math display">
-			 	Using these three conditions <a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...282L...5T">Tremaine & Weinberg (1984)</a> derived the formula:
-			 	<br>
-			 	<br>
-			 	   \( \Omega_\text{P} \sin(i) = \frac{\int_{-\infty}^{\infty}h(y)\int_{-\infty}^{\infty}v_{\text{LOS}} (x, y) \Sigma (x, y) \text{d} x \text{d}  y}{\int_{-\infty}^{\infty}h(y)\int_{-\infty}^{\infty}\Sigma (x, y) x  \text{d}x \text{d} y} = \frac{\langle v \rangle}{\langle x \rangle} \, , \)
-				<br>
-				<br>
-
-			 	where \(h(y)\) is the weight function, which has a form of a boxcar function to represent the slit,  \(\Sigma (x, y)\) and \( v_\text{LOS} \) are density and velocity fields respectively. \(i\) is the inclination angle and \( \Omega_P\) is measured pattern speed.
-			    </h4></p>
-			    </div>
-
-				<div class="container" id="apply" >
-				<header>
-					<h2><b><center>APPLYING THE TWM</center></b></h2>
-				</header>
-
-				<p><h4 class="math display">
-			 	Here you can find results of the Tremaine & Weinberg method applied to mock galaxies.
-			 	<br>
-			 	Gray-scale map shows the line-of-sight velocity field and horizontal lines indicate slits with the width of 100 pc. Only one in every four slits is shown \( \langle x \rangle \) and \( \langle v \rangle \) each data point corresponds to the slit matching to its color. Black line shows slope with ground truth pattern speed and grey line was obtained by fitting data points for those slits that cross the bar line.
-
-
-			    </h4></p>
-
+			    <p><h4  class="math display">
+				<p><h4>
+					You can find slides <a href="files/20220721_GalaxyCoffee.pdf" download> here </a> 
+				</h4></p>	    
 				</div>
 
 
@@ -150,9 +100,9 @@
 				<p style="text-align: center;">
 					<embed
 				       type="text/html" 
-				       src="files/twm2D_big.html"
-<!-- 				       width="900"
-				       height="450" -->
+				       src="files/twm2D.html"
+				       width="900"
+				       height="450"
 				       >
 					</embed>
 				</p>
